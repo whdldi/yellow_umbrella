@@ -1,0 +1,614 @@
+@charset "utf-8";
+
+*{margin:0; padding:0;}
+li{list-style: none;}
+a{text-decoration: none; color:#333;
+display:block;}
+
+/* header */
+
+header{
+     position: absolute;
+     width: 100%;
+     top:0;
+     left:0;
+}
+
+.h_top{
+     height: 45px;
+     line-height: 45px;
+     background-color: #444;
+}
+.h_top div{
+     width:1280px;
+     margin: 0 auto;
+}
+.h_top div::after{
+     content: '';
+     display: block;
+     clear: both;
+}
+.h_top ul{
+     float: left;
+}
+.h_top ul:last-child{
+     float: right;
+}
+.h_top ul:last-child li {
+     margin-left: 28px;
+     position: relative;
+}
+.h_top ul:last-child li::before{
+     content: '';
+     width:1px;
+     height:10px;
+     background-color: #777;
+     position: absolute;
+     left:-14px;
+     top:50%;
+     transform: translateY(-50%);
+}
+.h_top ul:last-child li:first-child::before{
+     display: none;
+}
+.h_top ul li{
+     display: inline-block;
+}
+
+.h_top ul li a{
+     color: #bcbcbc;
+     font-size: 14px;
+}
+/* .h_bottom */
+.fa-bars{
+     font-size: 30px;
+}
+.h_bottom{
+     width:1280px;
+     margin:0 auto;
+     clear: both;
+     text-align: center;
+}
+.h_bottom::after{
+     content: '';
+     display: block;
+     clear: both;
+}
+.h_bottom h1{
+     float: left;
+     margin-top: 30px;
+}
+.h_bottom nav{
+     display:inline-block;
+     margin-top: 50px;
+}
+.h_bottom ul li {
+     display: inline-block;
+     margin:0 20px;
+     font-weight: bold;
+     letter-spacing: -1px;
+}
+.h_bottom a{
+     color:#fff;
+}
+.h_bottom div{
+     float: right;
+     margin-top: 22px;
+     text-align: right;    
+}
+.h_bottom div p > a{
+     font-size: 15px;
+     margin-bottom: 5px;
+}
+
+/* main_visual */
+.main_visual{
+     height: 740px;
+     background: url('../img/162158222242185455.png')center center / cover no-repeat;
+}
+.main_visual div{
+     width:1280px;
+     margin: 0 auto;
+     padding-top:230px;
+     padding-left: 43px;
+}
+
+/* cont_navi */
+.cont_navi{
+     width:1280px;
+     margin: 0 auto;
+     margin-top: -80px;
+     background-color: white;
+     position: relative;
+     top:-80px
+}
+/* 본인을 기준으로(relative),top을 사용해서 띄워져있는 메뉴만듬 */
+.cont_navi ul::after{
+     content: '';
+     display: block;
+     clear: both;
+}
+.cont_navi ul li{/* 가입하기 박스 */
+     width: 213px;
+     height: 80px;
+     line-height: 80px;
+     float:left;
+     border-left: 1px solid #ebebeb;
+     box-sizing: border-box;
+     text-align: center;
+     position: relative;
+}
+.cont_navi ul li:first-child{
+     background-color: #ffd116;
+     border-left: 1px solid #ebc114;
+}
+.cont_navi ul li span{
+     margin-left:40px;
+}/* 아이콘에 글 가려서 글을 옆으로 밈 */
+.cont_navi ul li img{
+     position: absolute;
+     top:50%;
+     transform : translateY(-50%);
+}/* 아이콘이랑 글 수직가운데 맞추기 */
+
+
+
+/* .cont01 */
+.cont01{
+     width:1280px;
+     margin:70px auto;
+}
+.cont01::after{
+     content: '';
+     display: block;
+     clear: both;
+}
+.cont01 > div{
+     float: left;
+}
+.cont01 .cont01_left{
+     margin-right:10px;
+     width:640px;
+}
+.cont01 .cont01_right{
+     width: 630px;
+}
+
+.cont01_right div::after{
+     content: '';
+     display: block;
+     clear: both;
+}
+.cont01_right article {
+     width: 310px;
+     height: 245px;
+     background-color: #e8e8e8;
+     float: left;
+     padding: 35px 30px;
+     box-sizing: border-box;
+     letter-spacing: -1px;
+     position: relative;
+}
+.cont01_right div:first-child{
+     margin-bottom: 10px;
+}/* 위밑으로 박스 2개씩묶어서 가름 */
+.cont01_right div article:first-child{
+     margin-right:10px;
+}
+.cont01_right dl dt{
+     font-size: 18px;
+     font-weight: bold;
+}
+.cont01_right dl dd{
+     font-size: 16px;
+     color: #666;
+     margin-top: 5px;
+     line-height: 1.5;
+}
+
+
+.cont01_right article p {
+     position: absolute;
+     bottom:30px;
+     left:30px;
+}
+.cont01_right article::before{
+     content: '';
+     width: 60px;
+     height: 60px;
+     position: absolute;
+     right:30px;
+     bottom: 30px;
+}/* 공통태그article에 공통속성 넣고 사진만 따로적용 */
+.right01::before{
+     background: url('../img/ico_main_guide01.png') no-repeat;
+}
+.right02::before{
+     background: url('../img/ico_main_guide02.png') no-repeat;
+}
+.right03::before{
+     background: url('../img/ico_main_guide03.png') no-repeat;
+}
+.right04::after{
+     content: '';
+     display: block;
+     clear: both;
+}
+.right04 span{
+     width:125px;
+     height: 50px;
+     border:1px solid #767fa1;
+     box-sizing: border-box;
+     display: block;
+     float:left;
+     line-height: 50px;
+}/* span은 인라인요소라 테두리가 안들어가서 display 변경*/
+
+
+.cont01_right .right04 dd{
+     margin-top: 60px;
+}
+.right04 dd{
+     margin-top: 60px;
+}
+
+.cont01_right .right01 {
+     background-color: #fff;
+     border:1px solid #e8e8e8;
+     box-sizing: border-box;
+}
+.cont01_right .right04 {
+     background-color: #53608f;
+     color: #fff;
+}
+.cont01_right .right04 a{
+     color:#fff;
+     text-align: center;
+}
+/* 이하 칸사이 작게 겹치는선 없애는거 */
+.cont01_right .right04 span:nth-child(1),
+.cont01_right .right04 span:nth-child(2)
+{
+     border-bottom: 0;
+}
+.cont01_right .right04 span:nth-child(1),
+.cont01_right .right04 span:nth-child(3)
+{
+     border-right: 0;
+}
+
+/* banner */
+
+.banner {
+     width: 100%;
+     margin: 0 auto;
+     height: 250px;
+     background: url('../img/158148505033561868.jpg') center center / cover no-repeat;
+}
+.banner div{
+     width: 1280px;
+     margin:0 auto;
+}
+.banner .text{
+     margin:0 auto;
+     padding-top:64px;
+     color: #333;
+     font-weight: bold;
+}
+.banner .text dl dt{
+     font-size: 30px; 
+     margin-bottom: 10px;
+}
+.banner .text dl dt dd{
+     font-size: 18px;
+}
+.banner .text a{
+     width: 130px;
+     height: 45px;
+     border:1px solid #a4b7cc;
+     text-align: center;
+     line-height: 45px;
+     margin-top: 25px;
+     font-size: 15px;
+}
+
+/* cont02 */
+.cont02{
+     width:1280px;
+     margin: 0 auto;
+     margin-top: 70px;
+     margin-bottom: 70px;
+
+}
+.cont02 h3 {
+     font-size: 25px;
+
+}
+.cont02 ul li{
+     font-size: 40px;
+     color: #ffab00;
+     font-weight: bold;
+}
+.cont02 span{
+     color: #b38100;
+}
+.cont02 p{
+     font-size: 17px;
+     color: #333;
+}
+.cont02::after{
+     content: '';
+     display: block;
+     clear: both;
+}
+.cont02 .wrap > div{
+     float: left;
+}
+.call{
+     width: 307px;
+     height: 149px;
+}
+.service{
+     margin-left: 80px;
+}
+
+.service div{
+     float: left;
+     margin-right: 70px;
+     text-align: center;
+     margin-top: 25px;
+}
+/* cont03 */
+.cont03{
+     width: 1280px;
+     margin: 0 auto;
+     margin-bottom: 100px;
+}
+.cont03 .wrap > div{
+     float: left;
+}
+
+.cont03 .left{
+     width: 608px;
+     height: 200px;
+     margin-right: 55px;
+}
+
+.left_in_title{
+     width: 100%;
+     height: 49px;
+     border-bottom: 0.5px solid #eeeeee;
+     position: relative;
+ 
+}
+.left_in_title h2 {
+     font-size: 25px;
+}
+.left_in_title span{
+     font-size: 30px;
+     position: absolute;
+     bottom:15px;
+     right:0px;
+}
+.left_in_text{
+     font-size: 18px;
+     line-height: 2;
+     margin-top:27px;
+}
+.left_in_text span{
+     float: right;
+     color: #a5a5a5;
+     font-size: 14px;
+}
+
+.cont03 .right{
+     width: 608px;
+     height: 200px;
+}
+.right_in_title{
+     width: 100%;
+     height: 49px;
+     border-bottom: 0.5px solid #eeeeee;
+     position: relative;
+}
+.right_in_title h2 {
+     font-size: 25px;
+}
+.right_in_title span{
+     font-size: 30px;
+     position: absolute;
+     bottom:15px;
+     right:0px;
+}
+.right_in_text{
+     font-size: 18px;
+     line-height: 2;
+     margin-top:27px;
+}
+.right_in_text span{
+     float: right;
+     color: #a5a5a5;
+     font-size: 14px;
+}
+.wrap::after{
+     content: '';
+     display: block;
+     clear: both;
+}
+
+/* cont04 */
+
+.cont04{
+     height: 90px;
+     background-color: #efefef;
+
+}
+.cont04 div{
+     width: 1280px;
+     margin: 0 auto;
+     position: relative;
+
+}
+.logo_imgs {
+     position: absolute;
+     top:18px;
+     left:0px;
+}
+
+.logo_imgs img{
+     float: left;
+     margin-right: 60px; 
+}
+.logo_imgs:last-child{
+     margin-right:0px;
+}
+.wrap::after{
+     content: '';
+     display: block;
+     clear: both;
+}
+
+.button{
+     position: absolute;
+     top:30px;
+     left:0px;
+}
+/* 로고버튼 마우스오버했을때 클릭면적이 엄청 좁게나와요ㅠ */
+/* 저는 a랑img태그만 썼는데 선생님처럼 ul에a태그를 쓰는게 더 나은건가욥? (왜 ul li쓰는지 궁금해용)*/
+
+
+footer {
+     background-color: #333;
+     color: #999999;
+     position: relative;
+     font-size: 15px;
+ }
+ footer::before {
+     content: '';
+     width: 100%;
+     height: 1px;
+     background-color: #3f3f3f;
+     position: absolute;
+     top: 80px;
+     left: 0;
+ }
+ footer a {
+     color: #999;
+ }
+ .footer {
+     width: 1280px;
+     margin: 0 auto;
+     
+ }
+ .footer .footer_top {
+     height: 80px;
+     line-height: 80px;
+     
+ } 
+ .footer .footer_top ul {
+     text-align: center; 
+ }
+ 
+ .footer .footer_top ul li {
+     display: inline-block;
+     margin: 0 70px;
+     position: relative;
+ 
+ }
+ .footer .footer_top ul li::before {
+     content:'';
+     width: 1px;
+     height: 12px;
+     background-color: #999;
+     position: absolute;
+     right: -70px;
+     top: 50%;
+     transform: translateY(-50%);
+ }
+ .footer .footer_top ul li:last-child:before {
+     display: none;
+ }
+ .footer .footer_top ul li:nth-child(2) a {
+     color: #fff;;
+ }
+ .address {
+     padding: 20px 0; 
+     padding-bottom: 100px;
+ }
+ .address::after {
+     content:'';
+     display: block;
+     clear: both;
+ }
+  
+ .address ul {
+     float: left;
+ }
+ .address ul li {
+     display: inline-block;
+     margin-right: 20px;
+     position: relative;
+ }
+ .address ul.left li::before {
+     content:'';
+     width: 1px;
+     height: 12px;
+     background-color: #666666;
+     position: absolute;
+     top: 50%;
+     right: -15px;
+     transform: translateY(-50%);
+ }
+ .address ul.left li:nth-child(3)::before,
+ .address ul.left li:nth-child(4)::before {
+     display: none;
+ }
+ .address div {
+     float: right;
+ }
+ .address div ul {
+     display: inline-block;
+ }
+ .address div select {
+     display: inline-block;
+ }
+ .address div::after {
+     content:'';
+     display: block;
+     clear: both;
+ }
+ .address ul li span{
+     color: #fff;
+     margin-right: 10px;
+ }
+ .address .left li:last-child  {
+     display: block;
+     margin-top: 5px;
+  
+ }
+ .address .right {
+     position: relative;
+ }
+ .address .right ul {
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+     right: 200px;
+     width: 100%;
+ }
+ .address select {
+     width: 200px;
+     height: 45px;
+     box-sizing: border-box;
+     border: 1px solid #666666;
+     background-color: transparent;
+     color: #999;
+     padding-left: 20px;
+ }
+ .address select:focus {
+     outline: none;
+ }
+
+
+
+
